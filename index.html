@@ -1,131 +1,13 @@
-<!DOCTYPE html>
 
 <html>
 
-    <head>
-        <meta charset="utf-8"/>
-    </head>
-
-
     <body>
-
-        <img src="IMG_3270.png" width="275" height="508" id="coco" >
-        <img src="simon-birt-o82jKeryguw-unsplash.png" id="käse" onclick="scoreerhöhen()" >
-
-        <p id="score"> </p>
-
-
+    
+        <h1> Lia ist mega cool ! </h1>
+    
+    
     </body>
-
-
-    <style>
-
-        body{
-            background-image: url("naomi-hebert-MP0bgaS_d1c-unsplash.png");
-            background-size: 100%;
-        }
-
-        #coco{
-            position: absolute;
-            left: 50%;
-            top: 30%;
-        }
-
-        #käse{
-
-            position: absolute;
-            background-image: url("simon-birt-o82jKeryguw-unsplash.png");
-            width: 200px;
-            height: 200px;
-            left: 50%;
-
-        }
-
-        #score{
-
-            font-family: Avenir;
-            font-size: 100px;
-            color: black;
-            position: absolute;
-            left: 5%;
-            top: 0%;
-        }
-
-    </style>
-
-
-    <script>
-
-        let score = 0;
-        let anzeige = document.getElementById('score');
-        let käse = document.getElementById('käse');
-
-        setInterval(function () {
-
-            käseverstecken();
-
-        }, 2000);
-
-        function käseverstecken() {
-
-
-            if (score < 5) {
-
-                käse.style.visibility = 'hidden';
-
-                käse.onclick = function () {
-                    scoreerhöhen();
-                };
-
-                käseumplatzieren();
-
-            }
-        }
-
-
-        function käseumplatzieren() {
-
-            if (score < 5) {
-                let xkoordinate = Math.floor((Math.random() * 90) + 1);
-                let ykoordinate = Math.floor((Math.random() * 90) + 1);
-
-                let textx = xkoordinate.toString() + '%';
-                let texty = ykoordinate.toString() + '%';
-
-                käse.style.visibility = 'visible';
-
-                käse.style.left = textx;
-
-                käse.style.top = texty;
-
-                käse.onclick = function () {
-                    scoreerhöhen();
-                };
-            }
-        }
-
-        function scoreerhöhen() {
-
-            if (score <5) {
-
-                score = score + 1;
-                anzeige.innerHTML = score;
-
-                käseumplatzieren();
-
-            }else {
-
-                clearInterval();
-                anzeige.innerHTML = 'fertig';
-
-                käse.style.visibility = 'hidden';
-            }
-
-
-        }
-
-
-    </script>
+    
 
 
 </html>

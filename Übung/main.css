@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Poppins;
+}
+p{
+    font-size: .9em;
+    line-height: 1.6em;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    padding: .8em 1.2em;
+    background-color: #EAEBEC;
+    margin: 3%;
+}
+.logo{
+    font-family: "Abril Fatface";
+    font-size: 1.5em ;
+    margin-top: 1%;
+}
+
+.hide-mobile{
+    display: none;
+}
+section{
+    height: 20em;
+    margin-top: 25%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 25px;
+    margin-top: 2%;
+}
+.server{
+    font-size: 3.5em;
+    font-family: "Abril Fatface";
+    margin: 1%;
+
+}
+.subhead{
+    font-size: 1.5em;
+    margin: 1%;
+}
+
+.blue-container ul {
+
+
+}
+
+.blue-container ul li {
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+}
+
+.blue-container img {
+    width: 55%;
+    z-index: 0;
+}
+
+.blue-container p {
+
+    z-index: 1;
+
+}
+
+
